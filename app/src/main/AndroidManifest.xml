@@ -27,6 +27,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+            <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+            <meta-data
+                android:name="com.google.android.gms.ads.6008940971061148"
+                android:value="ca-app-pub-3940256099942544"/>
+
+
     </application>
 
 </manifest>
