@@ -1,6 +1,8 @@
 package com.grupo8.sportsylepro.ui.login;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -26,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
+    EditText user;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,10 @@ public class LoginActivity extends AppCompatActivity {
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
+
+        user=findViewById(R.id.username);
+        SharedPreferences prefer=getSharedPreferences("username", Context.MODE_PRIVATE);
+        user.setText(prefer.getString("username","username"));
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
