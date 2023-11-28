@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1052961448296",
+    "project_id": "sportstylepro-68a6c",
+    "storage_bucket": "sportstylepro-68a6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052961448296:android:3f0f840c64f3e623eb36dd",
+        "android_client_info": {
+          "package_name": "com.grupo8.sportsylepro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-GjJr2ZvAB5eiECwyuHNzFxs55l5s5N4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
