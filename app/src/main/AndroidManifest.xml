@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+    Allows Glide to monitor connectivity status and restart failed requests if users go from a
+    a disconnected to a connected network state.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SportSylePro"
         tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:exported="false"
@@ -26,14 +36,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-            <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
-            <meta-data
-                android:name="com.google.android.gms.ads.6008940971061148"
-                android:value="ca-app-pub-3940256099942544"/>
-
-
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.6008940971061148"
+            android:value="ca-app-pub-3940256099942544" />
     </application>
 
 </manifest>
