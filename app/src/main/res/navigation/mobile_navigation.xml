@@ -22,4 +22,9 @@
         android:name="com.grupo8.sportsylepro.ui.tucuenta.TuCuentaFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_tucuenta" />
+    <fragment
+        android:id="@+id/productos"
+        android:name="com.grupo8.sportsylepro.productos"
+        android:label="fragment_productos"
+        tools:layout="@layout/fragment_productos" />
 </navigation>

@@ -23,25 +23,155 @@
         app:layout_constraintVertical_bias="0.994" />
 
     <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="698dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_width="376dp"
+        android:layout_height="633dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="52dp"
+            android:layout_height="85dp"
+            android:clickable="true">
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ropahombre" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="Ropa para caballero"
+                android:textSize="25dp" />
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ropamujer" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="Ropa para dama"
+                android:textSize="25dp" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ropanino" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="Ropa para niño"
+                android:textSize="25dp" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="67dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/zapatohombre" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="Zapatos para caballero"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="396dp"
+            android:layout_height="222dp"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/zapatomujer" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="Zapatos para dama"
+                android:textSize="25dp" />
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/zapatonino" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:paddingLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="Zapatos para niño"
+                android:textSize="25dp" />
+        </TableRow>
+
+
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
