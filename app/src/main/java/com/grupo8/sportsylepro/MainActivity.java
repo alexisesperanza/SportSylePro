@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     String iniciarSesion, showusuario;
   public FirebaseUser user;
-    public String pass;
+
   public String usuario="Iniciar Sesion/Registrate";
 
 
@@ -95,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(this, LoginActivity.class);
         startActivity(intent2);
         }
+
+
 
 
 
