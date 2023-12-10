@@ -12,7 +12,8 @@ android {
 
     defaultConfig {
         applicationId = "com.grupo8.sportsylepro"
-        minSdk = 27
+        minSdk = 24
+        //noinspection EditedTargetSdkVersion
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,7 +38,9 @@ android {
 
 dependencies {
 
-    implementation("androidx.appcompat:appcompat:1.6.1")
+
+    implementation("androidx.browser:browser:1.5.0")
+    implementation ("androidx.browser:browser:1.6.0-alpha01")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")

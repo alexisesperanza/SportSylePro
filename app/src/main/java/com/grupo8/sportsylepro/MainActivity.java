@@ -1,13 +1,13 @@
 package com.grupo8.sportsylepro;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
-    String iniciarSesion, showusuario;
+    String showusuario;
   public FirebaseUser user;
 
   public String usuario="Iniciar Sesion/Registrate";
@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fabCorreo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String url = "mailto:2546122019@mail.utec.edu.com";
+                CustomTabsIntent intent = new CustomTabsIntent.Builder().build();
+                intent.launchUrl(MainActivity.this, Uri.parse(url));
+
 
             }
 
